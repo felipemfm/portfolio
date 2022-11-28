@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql, Link } from "gatsby";
+import {  Link } from "gatsby";
 
 import Layout from "../components/Layout";
 import { header, btn, avatar } from "../styles/home.module.css";
@@ -8,7 +8,29 @@ export default function Home({ data }) {
   return (
     <Layout>
       <section className={header}>
-        <div className={avatar}></div>
+        <div>
+          <div className={avatar}></div>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/felipemfm"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/felipemfm/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
         <div>
           <h2>Felipe Machado Portfolio</h2>
           <h3>Full stack software engineer</h3>
