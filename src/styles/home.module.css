@@ -21,7 +21,7 @@
   font-weight: 500;
 }
 .avatar {
-  /* align-items: center; */
+  margin: 0 auto;
   background-image: url("https://avatars.githubusercontent.com/u/73625660?v=4");
   width: 250px;
   height: 250px;
@@ -30,10 +30,19 @@
   border-radius: 50%;
   transition: all 1s;
 }
-.avatar:hover{
+.avatar:hover {
   transform: rotate(90deg);
 }
-table{
+table {
   width: 100%;
-  border-collapse:  collapse;
+  border-collapse: collapse;
+}
+ul {
+  margin-top: 20px;
+  list-style: none;
+  width: 100%;
+}
+ul li{
+  text-align: center;
+  margin-top: 5px;
 }
