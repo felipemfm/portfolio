@@ -6,7 +6,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Projects = ({ data }) => {
   const projects = data.projects.nodes;
-  console.log(projects);
   return (
     <Layout>
       <div className={portfolio}>
