@@ -32,7 +32,7 @@ export default function Home({ data }) {
           </ul>
         </div>
         <div>
-          <h2>Felipe Machado Portfolio</h2>
+          <h2>Felipe Machado</h2>
           <h3>Full stack software engineer</h3>
           <p>
             Welcome! My name is Felipe and I am a Brazilian software engineer
@@ -42,8 +42,7 @@ export default function Home({ data }) {
           <p>
             This portfolio is a mixture of solo and team projects where I have
             worked as a full-stack engineer. My experience goes from creating
-            and styling components to designing databases and API endpoints and
-            deploying them using cloud-based services.
+            and styling components to designing databases and API endpoints.
           </p>
           {/* <table>
             <tbody>

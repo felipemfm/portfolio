@@ -1,14 +1,15 @@
 .header {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 40px;
   /* align-items: center; */
 }
 .header h2 {
-  font-size: 4em;
+  font-size: 3em;
 }
 .header h3 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -19,6 +20,10 @@
   border-radius: 10px;
   margin-top: 20px;
   font-weight: 500;
+  transition: 0.5s all ease-out;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 .avatar {
   margin: 0 auto;
@@ -42,7 +47,13 @@ ul {
   list-style: none;
   width: 100%;
 }
-ul li{
+ul li {
   text-align: center;
   margin-top: 5px;
+}
+ul li a {
+  border-bottom: 3px solid transparent;
+}
+ul li a:hover {
+  border-color: white;
 }
