@@ -7,6 +7,7 @@ date: 2022-08-1T00:00:00+00:00
 github: https://github.com/felipemfm/toilet-finder
 website: https://toiletfinder-cc27.herokuapp.com/
 team: true
+highlight: false
 ---
 
 ToiletFinder.com is a super convenient search tool powered by Google Maps for finding the closest bathroom to your location, immediately.

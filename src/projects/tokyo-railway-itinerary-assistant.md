@@ -7,6 +7,7 @@ date: 2021-07-1T00:00:00+00:00
 github: https://github.com/felipemfm/itinerary_assistant_react
 website: https://tokyo-railway-itinerary-assistant.netlify.app/
 team: false
+highlight: true
 ---
 
 The Tokyo metropolitan area is connect with a intricate railway network and while it can take you pretty much anywhere, sometimes the variety of train lines and train types can be intimidating for foreigners and users unfamiliar with the Japanese Capital.

@@ -25,3 +25,7 @@
   color: #ccc;
   margin-top: 4px;
 }
+.title {
+  text-align: center;
+  border: 0.1cm solid white;
+}

@@ -1,13 +1,21 @@
 import * as React from "react";
-import {  Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import Layout from "../components/Layout";
-import { header, btn, avatar } from "../styles/home.module.css";
+import { about, btn, avatar, carousel, title } from "../styles/home.module.css";
+import ProjectsCarousel from "../components/ProjectsCarousel ";
 
 export default function Home({ data }) {
   return (
     <Layout>
-      <section className={header}>
+      <h2 className={title}>Projects Highlights</h2>
+      <section className={carousel}>
+        <div>
+          <ProjectsCarousel carouselImages={data.carouselImages.nodes} />
+        </div>
+      </section>
+      <h2 className={title}>About Me</h2>
+      <section className={about}>
         <div>
           <div className={avatar}></div>
           <ul>
@@ -44,55 +52,6 @@ export default function Home({ data }) {
             worked as a full-stack engineer. My experience goes from creating
             and styling components to designing databases and API endpoints.
           </p>
-          {/* <table>
-            <tbody>
-              <tr>
-                <th>Frontend</th>
-                <th>Backend</th>
-                <th>Others</th>
-              </tr>
-              <tr>
-                <td>JavaScript</td>
-                <td>Node.js</td>
-                <td>Github</td>
-              </tr>
-              <tr>
-                <td>React</td>
-                <td>Express</td>
-                <td>Firebase</td>
-              </tr>
-              <tr>
-                <td>Redux</td>
-                <td>MySQL</td>
-                <td>Heroku</td>
-              </tr>
-              <tr>
-                <td>TypeScript</td>
-                <td>Postgres</td>
-                <td>Docker</td>
-              </tr>
-              <tr>
-                <td>Vue</td>
-                <td>PHP</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>HTML</td>
-                <td>Python</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>CSS</td>
-                <td>Django</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>SASS</td>
-                <td>FastAPI</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table> */}
 
           <Link className={btn} to="/projects">
             My Portfolio Projects
@@ -103,12 +62,28 @@ export default function Home({ data }) {
   );
 }
 
-// export const query = graphql`
-//   query MyQuery {
-//     file(relativePath: { eq: "banner.png" }) {
-//       childImageSharp {
-//         gatsbyImageData(layout: FIXED)
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  query {
+    carouselImages: allMarkdownRemark(
+      filter: { frontmatter: { highlight: { eq: true } } }
+      sort: { frontmatter: { date: ASC } }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                quality: 70
+                blurredOptions: { width: 100 }
+                width: 700
+              )
+            }
+          }
+        }
+        id
+      }
+    }
+  }
+`;

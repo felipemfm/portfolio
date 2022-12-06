@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { portfolio, project } from "../../styles/projects.module.css";
+import { portfolio, project, title } from "../../styles/projects.module.css";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -9,7 +9,7 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <div className={portfolio}>
-        <h2>Portfolio</h2>
+        <h2 className={title}>Portfolio</h2>
         <h3>Solo Projects</h3>
         <div className={project}>
           {projects.map((project) => (

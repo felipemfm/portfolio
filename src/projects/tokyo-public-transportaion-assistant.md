@@ -7,6 +7,7 @@ date: 2022-08-30T00:00:00+00:00
 github: https://github.com/felipemfm/tokyo-pt-assistant
 website:
 team: false
+highlight: false
 ---
 
 An application to help users better understand and navigate Tokyo's public transportation system.

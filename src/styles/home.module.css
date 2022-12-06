@@ -1,14 +1,14 @@
-.header {
+.about {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 40px;
   /* align-items: center; */
 }
-.header h2 {
+.about h2 {
   font-size: 3em;
 }
-.header h3 {
+.about h3 {
   font-size: 2em;
   font-weight: 400;
   margin-bottom: 20px;
@@ -56,4 +56,13 @@ ul li a {
 }
 ul li a:hover {
   border-color: white;
+}
+.carousel {
+}
+.carousel div {
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  border: 0.1cm solid white;
 }
