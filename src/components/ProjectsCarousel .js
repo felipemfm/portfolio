@@ -17,8 +17,9 @@ function ProjectsCarousel({ carouselImages }) {
               )}
               alt={node.frontmatter.title}
             />
-            <Link to={"/projects/" + node.frontmatter.slug}className="legend">{node.frontmatter.title}</Link>
-            
+            <Link to={"/projects/" + node.frontmatter.slug} className="legend">
+              {node.frontmatter.title}
+            </Link>
           </div>
         );
       })}

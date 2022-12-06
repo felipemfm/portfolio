@@ -5,7 +5,7 @@ slug: fire-chat
 featuredImage: ../images/featured/fire-chat.png
 date: 2022-08-15T00:00:00+00:00
 github: https://github.com/felipemfm/fire-chat
-website: https://cc27-chat-room.herokuapp.com/
+website: https://fire-chat-romm.netlify.app/
 team: false
 highlight: true
 ---
