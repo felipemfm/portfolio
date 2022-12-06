@@ -2,6 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 function ProjectsCarousel({ carouselImages }) {
   console.log(carouselImages);
@@ -16,7 +17,8 @@ function ProjectsCarousel({ carouselImages }) {
               )}
               alt={node.frontmatter.title}
             />
-            <p className="legend">{node.frontmatter.title}</p>
+            <Link to={"/projects/" + node.frontmatter.slug}className="legend">{node.frontmatter.title}</Link>
+            
           </div>
         );
       })}

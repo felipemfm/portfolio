@@ -71,6 +71,7 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
+          slug
           featuredImage {
             childImageSharp {
               gatsbyImageData(
